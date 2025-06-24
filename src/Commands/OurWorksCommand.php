@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace MediaWebId\OurWorks\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class OurWorksCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'ourworks';
 
     public $description = 'My command';
 
