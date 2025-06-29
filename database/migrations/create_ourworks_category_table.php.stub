@@ -8,21 +8,12 @@ return new class extends Migration
 {
     public function up()
     {
-        Schema::create('ourworks', function (Blueprint $table) {
+        Schema::create('ourworks_categories', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('ourworks_category_id')->nullable()->cascadeOnDelete();
             $table->string('title')->nullable();
             $table->string('slug')->nullable();
             $table->text('description')->nullable();
             $table->longText('summary')->nullable();
-            $table->json('image')->nullable();
-            $table->string('audio')->nullable();
-            $table->string('video')->nullable();
-            $table->json('galleries')->nullable();
-            $table->string('client')->nullable();
-            $table->timestamp('date')->nullable();
-            $table->json('tools')->nullable();
-            $table->json('credits')->nullable();
             $table->string('status')->default('Draft');
             $table->json('meta')->nullable();
             $table->timestamp('deleted_at')->nullable();

@@ -21,6 +21,7 @@ class OurWorksServiceProvider extends PackageServiceProvider
             ->hasRoutes('web')
             ->hasViews()
             ->hasMigration('create_ourworks_table')
+            ->hasMigration('create_ourworks_category_table')
             ->hasCommand(OurWorksCommand::class);
     }
 }
